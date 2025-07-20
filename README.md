@@ -1,3 +1,4 @@
+Siteyi ziyaret etmek için -> https://aylinbushaj.github.io/blog_sites/
 ##  Teknik Gereksinimler
 
 -   **HTML:**  Yapısal belge işaretleme dili olarak HTML kullanıldı.
