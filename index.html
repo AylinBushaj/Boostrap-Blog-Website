@@ -5,40 +5,76 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>Blog Sitesi</title>
 </head>
-<body>
-  <!--HEADER-->
-  <header class="header">
-    <h1> Blog Sitesi </h1>
-    <nav class="nav">
-      <ul>
-        <li><a href="./index.html">Ana Sayfa</a></li>
-        <li><a href="./post.html">Blog Gönderisi</a></li>
-      </ul>
-    </nav>
-  </header>
+<body style="background-color: black ; opacity: 0.6";>
 
-  <!--BLOG-->
-  <section class="container">
-    <h2>Son Gönderiler</h2>
-   <div class="blog"> 
-        <article class="blog1">
-          <img src="https://picsum.photos/200/270/" alt="Blog Görseli">
-          <h3> <a href="./post.html">Blok Gönderisi Başlığı</a></h3>
-          <p>Bu, blog gönderisi özetidir.Daha fazlasını okumak için başlığa tıklayın...</p>
-        </article>
-        <article class="blog2">
-          <img src="https://picsum.photos/200/270/" alt="Blog Görseli">
-          <h3> <a href="./post.html">Blok Gönderisi Başlığı</a></h3>
-          <p>Bu, blog gönderisi özetidir.Daha fazlasını okumak için başlığa tıklayın...</p>
-        </article>
-   </div>
-  </section>
+  <!--NavBar SECTION-->
+  <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3" style="border-radius: 5px;>
+        <div class="container-fluid">
+          <a class="navbar-brand fs-4 fw-bold" href="./index.html">  <i class="fa-solid fa-blog"></i>  Blog</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse fw-bold" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item ">
+                <a class="nav-link text-light" aria-current="page" href="./index.html">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./post.html">Blog Gönderileri</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </div>
+
+  <!-- JUMBOTRON SECTION-->
+
+  <div class="jumbotron jumbotron-fluid">
+  <div class="container text-center text-light">
+    <h1 class="fs-1">Blog'a Hoş Geldiniz.</h1>
+    <p class="fs-2">Merak ettikleriniz ve daha fazlası..</p>
+  </div>
+</div>
+
+  <!-- MAIN SECTION -->
+  <div class="container d-flex justify-content-center">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-6">
+        <div class="card" style="width: 18rem;">
+          <img src="https://picsum.photos/id/32/200/230/" class="card-img-top" alt="Blog Görseli">
+          <div class="card-body">
+            <h5 class="card-title">Blok Gönderisi Başlığı</h5>
+            <p class="card-text">Bu, blog gönderisi özetidir.Daha fazlasını okumak için başlığa tıklayın...</p>
+            <a href="./post.html" class="btn btn-dark">Daha Fazla..</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card" style="width: 18rem;">
+          <img src="https://picsum.photos/id/19/200/230/" class="card-img-top" alt="Blog Görseli">
+          <div class="card-body">
+            <h5 class="card-title">Blok Gönderisi Başlığı</h5>
+            <p class="card-text">Bu, blog gönderisi özetidir.Daha fazlasını okumak için başlığa tıklayın...</p>
+            <a href="./post.html" class="btn btn-dark">Daha Fazla..</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 <!--FOOTER-->
-<footer>
+<footer class="bg-dark text-light fs-6 fw-bold ">
   <p> <span>&copy;</span> 2025 Blog Sitesi </p>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
 </html>
